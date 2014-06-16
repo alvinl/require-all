@@ -2,7 +2,7 @@ require-all
 ===========
 [![Build Status](https://travis-ci.org/alvinl/require-all.svg?branch=master)](https://travis-ci.org/alvinl/require-all)
 
-Requires all .js files in a folder and returns them as an object
+Requires all .js & .json files in a folder and returns them as an object
 
 ## Install
 
