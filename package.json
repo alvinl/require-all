@@ -1,6 +1,6 @@
 {
   "name": "require-all",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Requires all .js files in a folder and returns them as an object",
   "main": "index.js",
   "scripts": {

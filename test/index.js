@@ -4,11 +4,12 @@ var should = require('should'),
 
 describe('require-all', function () {
   
-  it('should require all .js files', function (done) {
+  it('should require all .js and .json files', function (done) {
     
     var modules = reqAll(__dirname + '/test-modules');
 
-    modules.should.not.have.property('config');
+    Object.keys(modules).length.should.be.exactly(3);
+    modules.should.have.property('config');
     modules.should.have.property('controllers');
     modules.should.have.property('routes');
     modules.routes.should.have.property('home');

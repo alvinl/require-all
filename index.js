@@ -30,8 +30,8 @@ function RequireAll (folderName) {
 
     var extensionName = file.split('.')[file.split('.').length-1];
     
-    if (extensionName === 'js')
-      modules[file.replace('.js', '')] = require(folderName + '/' + file);
+    if (extensionName === 'js' || extensionName === 'json')
+      modules[file.replace('.' + extensionName, '')] = require(folderName + '/' + file);
 
   });
 
