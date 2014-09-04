@@ -3,9 +3,9 @@ var should = require('should'),
     reqAll = require('../');
 
 describe('require-all', function () {
-  
+
   it('should require all .js and .json files', function (done) {
-    
+
     var modules = reqAll(__dirname + '/test-modules');
 
     Object.keys(modules).length.should.be.exactly(3);
@@ -20,7 +20,7 @@ describe('require-all', function () {
   });
 
   it('should throw an error if the folder doesn\'t exist', function (done) {
-    
+
     var modules;
 
     try {
